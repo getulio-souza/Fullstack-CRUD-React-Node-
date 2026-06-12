@@ -21,11 +21,11 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: unique
+        unique: true
       },
       
       email_verified_at: {
-        type: sequelize.DATE,
+        type: Sequelize.DATE,
       },
       password: {
         type: Sequelize.STRING,
