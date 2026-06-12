@@ -1,12 +1,18 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
+//auth
+const authRoutes = require('./routes/auth')
+
 require('dotenv').config()
 
 console.log(process.env.DB_DATABASE);
 console.log(process.env.DB_USERNAME);
 
 const app = express();
+
+//auth
+app.use('/api', authRoutes)
 
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }))
