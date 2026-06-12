@@ -67,3 +67,12 @@ exports.register = async (req, res) => {
     });
   }
 };
+
+//dashboard
+exports.dashboard = async (req, res) => {
+  return res.status(200).json({
+    msg: "this is the dashboard page"
+  })
+}
+
+// https://medium.com/@naincychauhan/building-a-user-authentication-system-in-node-js-express-postgresql-and-react-js-from-scratch-f15dc0314632

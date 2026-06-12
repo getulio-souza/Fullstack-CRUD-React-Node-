@@ -3,6 +3,8 @@ const { body } = require('express-validator');
 const { register } = require('../controllers/auth');
 const router = Router();
 
+
+//register user
 const validateRegister = [
   body('name').isLength({ min: 4 }).notEmpty().withMessage('Ops! Name is required').trim().escape(),
   body('email').isEmail().notEmpty().withMessage('Ops! Email is required').trim().escape(),
@@ -10,5 +12,14 @@ const validateRegister = [
 ];
 
 router.post('/register', validateRegister, register);
+
+
+//login user
+const validateLogin = [
+  body('email').isEmail().notEmpty().withMessage('ops! Email is required!'),
+  body('password').notEmpty().withMessage('ops! Email is required!').trim().escape(),
+];
+
+router.post('/login', validateLogin, login)
 
 module.exports = router;

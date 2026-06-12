@@ -18,6 +18,7 @@ app.use('/api', authRoutes)
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+
 app.get('/', (req, res) => {
   return res.json({'msg': 'this is home page'})
 })
