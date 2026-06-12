@@ -1,0 +1,60 @@
+.pagination-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.pagination-number{
+    display: flex;
+    gap: 1rem;
+}
+
+.pagination-number span{
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 500;
+    box-shadow: 1px 2px 4px #000000;
+
+}
+
+.pagination-number span:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
+.prev-btn, .next-btn{
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+    color: #2563eb;
+    box-shadow: 1px 2px 4px #000000;
+
+}
+
+.prev-btn:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
+.next-btn:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
+.currentPage{
+    background-color: #2563eb;
+    color: white;
+}
+
+.otherPages{
+    background-color: white;
+    color: #2563eb;
+}

@@ -1,0 +1,20 @@
+# Dependências
+frontend/node_modules/
+backend/node_modules/
+
+# Variáveis de ambiente
+backend/.env
+
+# Build
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

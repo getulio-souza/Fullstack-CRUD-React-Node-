@@ -1,0 +1,12 @@
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#212121;
+  color: white;
+  font-family: inter;
+}
+

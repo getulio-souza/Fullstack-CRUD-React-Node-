@@ -1,0 +1,158 @@
+.list-container{
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1366px){
+  .list-container{
+    width: 1200px;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* junta as bordas */
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Borda geral */
+table,
+th,
+td {
+  border: 1px solid #d1d5db;
+}
+
+/* Cabeçalho */
+thead {
+  background-color: #1e293b;
+  color: white;
+}
+
+th {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Células */
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even) {
+  background-color: rgb(35, 35, 35);
+}
+
+/* Hover */
+tbody tr:hover {
+  background-color: #2a2a2a;
+  transition: 0.2s;
+}
+
+/* Botão */
+.actions-list button {
+  width: 100%;
+  padding: 6px 12px;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
+/* responsivo tabela */
+
+@media screen and (max-width:900px){
+  @media (max-width: 900px) {
+  table {
+    width: 100%;
+    border: 1px solid #2a2a2a;
+
+    thead,
+    tr {
+      display: block;
+    }
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      height: auto;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td {
+      display: block;
+      font-size: 1em;
+      position: relative;
+      color: #fff;
+    }
+
+    td::before {
+      content: attr(data-label);
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+}
+
+.filters-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.filters-container button{
+    width: 150px;
+  }
+
+.actions-list{
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-btn{
+   background-color: #2563eb;
+   transition: .5s;
+   font-weight: 600;
+}
+
+.delete-btn{
+  background-color: rgb(203, 42, 42);
+  transition: .5s;
+  font-weight: 600;
+}
+
+.edit-btn:hover{
+  background-color: white;
+  color: #2563eb;
+}
+
+.delete-btn:hover{
+  background-color: white;
+  color: rgb(203, 42, 42);
+}
+.filters-container button{
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: #2563eb;
+  color: #fff;
+
+}
+
+.filters-container button:hover{
+  background-color: white;
+  color: #2563eb;
+;
+}

@@ -1,0 +1,9 @@
+select{
+    border-radius: 6px;
+    padding: 10px;
+    transition: .5s;
+}
+
+select:hover{
+    opacity: 0.8;
+}
